@@ -27,10 +27,11 @@ aws sqs \
   --message-body '{"number": <ANY_NUMBER>}'
 ```
 ## Test API Gateway > Lambda > SQS > Lambda
-
+```
 curl -X POST -H "Content-Type: application/json" -d \
   '{"number": <ANY_NUMBER>}' \
   <API_URL>
+```
 ## Check output in CloudWatch Logs
 * Find log group based off SQS Lambda function name
 * Expand [INFO]
